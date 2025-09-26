@@ -1,15 +1,38 @@
-#container{
-    height:200px;
-    width: 300px;
-    background-color: white;
-    position:relative;
+*{
+    margin: 0px;
+    padding: 0px;
 }
-#box{
-    height: 100px;
-    width:100px;
-    background-color: red;
-    border-radius:50px;
-    position: absolute;
-    left:100px;
-    top:50px
+
+
+.container{
+    background-color: bisque;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:5px; 
+    
+
+}
+
+.box{
+    height:100px;
+    width: 100px;
+    margin:5px;
+}
+.first{
+    background-color: green;
+    flex-basis: 300
+    px;
+}
+.two{
+    background-color: blue;
+}
+.three{
+    background-color: chocolate;
+}
+.four{
+    background-color: crimson;
 }
