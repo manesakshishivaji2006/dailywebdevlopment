@@ -1,17 +1,33 @@
-h1{
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
     background-color: black;
 }
-/* id base selection # 
-/* #first{
-bacgraound-color:pink;
-}*/
+.container{
+    display: flex;
+    background-color: aqua;
+    padding: 5px;
+    gap:5px;
+}
+.box{
+    height: 200px;
+    width: 200px;
+}
 
-/* class based select */
-/*.third{
-color: green;*/
-/* h1{
-font-size: 80px;
-font-family: italic;
-font-weight: 900;
-font-style:
+.first{
+    background-color: orange;
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.child{
+    height: 140px;
+    background-color: red;
+
 }
