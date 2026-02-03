@@ -1,14 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css.css">
+<meta charset="UTF-8">
+<title>CSS Boxes Demo</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 30px;
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Common box style */
+.box {
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 1. Border & Background */
+.box1 {
+    background-color: #ff6b6b;
+    border: 4px solid #c0392b;
+}
+
+/* 2. Border Radius */
+.box2 {
+    background-color: #6c5ce7;
+    border-radius: 20px;
+}
+
+/* 3. Box Shadow */
+.box3 {
+    background-color: #00b894;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* 4. Gradient Background */
+.box4 {
+    background: linear-gradient(135deg, #fd79a8, #fdcb6e);
+}
+
+/* 5. Hover Transition */
+.box5 {
+    background-color: #0984e3;
+    transition: transform 0.4s, background-color 0.4s;
+}
+
+.box5:hover {
+    transform: scale(1.1);
+    background-color: #74b9ff;
+}
+
+/* 6. Rotate */
+.box6 {
+    background-color: #2d3436;
+    transform: rotate(-2deg);
+}
+
+/* 7. Opacity */
+.box7 {
+    background-color: #e17055;
+    opacity: 0.7;
+}
+
+/* 8. Outline */
+.box8 {
+    background-color: #00cec9;
+    outline: 4px dashed #006266;
+}
+
+/* 9. Position Relative */
+.box9 {
+    background-color: #fdcb6e;
+    position: relative;
+}
+
+.box9 span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+}
+
+/* 10. CSS Grid Box */
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.small {
+    background-color: rgba(255,255,255,0.4);
+    color: #000;
+    padding: 10px;
+}
+</style>
 </head>
-<body style="background-color: black;">
-    <div id="container">
-        <div id="box"></div>
+
+<body>
+
+<h1>CSS Properties Using Boxes</h1>
+
+<div class="container">
+
+    <div class="box box1">Border & Background</div>
+
+    <div class="box box2">Border Radius</div>
+
+    <div class="box box3">Box Shadow</div>
+
+    <div class="box box4">Gradient Background</div>
+
+    <div class="box box5">Hover Effect</div>
+
+    <div class="box box6">Transform Rotate</div>
+
+    <div class="box box7">Opacity</div>
+
+    <div class="box box8">Outline Property</div>
+
+    <div class="box box9">
+        Position Relative
+        <span>Absolute text</span>
     </div>
+
+    <div class="box box4 grid-box">
+        <div class="small">Grid 1</div>
+        <div class="small">Grid 2</div>
+        <div class="small">Grid 3</div>
+        <div class="small">Grid 4</div>
+    </div>
+
+</div>
+
 </body>
 </html>
